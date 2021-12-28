@@ -63,7 +63,7 @@ export default class View {
 
   addLogoNewCard(logo) {
     let logoElem = document.getElementById("logoNewCard");
-    logoElem.src = logo ? `img/logo-${logo}.png` : ``;
+    logoElem.setAttribute('src',(logo ? `img/logo-${logo}.png` : ``));
   }
 
   deleteCard(id) {
