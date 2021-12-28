@@ -1,0 +1,144 @@
+#newCard {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  color: white;
+  width: 100%;
+}
+
+#newCard .glass {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffb3;
+}
+
+#newCard form {
+  padding: 3vh 3vh;
+  background-color: #4b4743;
+  border-radius: 2vh;
+  width: 80vh;
+}
+
+#newCard .dataCard {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+#newCard table {
+  width: 80%;
+}
+
+#newCard .logoForm {
+  text-align: center;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+#newCard .logoForm #logoNewCard {
+  width: 70%;
+}
+
+#newCard table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+#newCard table tr label {
+  font-size: 2.5vh;
+  padding-bottom: 1vh;
+}
+
+#newCard table tr span {
+  height: 3vh;
+  color: red;
+  font-size: 2vh;
+}
+
+#newCard form .number,
+#newCard form .comment {
+  background-color: rgb(255, 229, 197);
+  border: 0.25vh solid rgb(255, 229, 197);
+  border-radius: 0.8vh;
+  font-size: 3vh;
+  padding: 0.5vh 0.5vh;
+  width: 100%;
+}
+
+#newCard form .number:focus-visible,
+#newCard form .comment:focus-visible {
+  outline: none;
+  border: 0.25vh solid rgb(92, 212, 68);
+}
+
+#newCard form input[type="button"] {
+  display: block;
+  margin: 0 auto;
+  border: 0.25vh solid #665f5f;
+  background-color: transparent;
+  color: grey;
+  padding: 0.5vh 3vh;
+  border-radius: 1.2vh;
+  font-size: 2.5vh;
+  cursor: pointer;
+  width: 40%;
+}
+
+#newCard form #saveButton {
+  margin-bottom: 1.5vh;
+}
+
+#newCard form #saveButton:hover {
+  border: 0.25vh solid #36e73f;
+  color: #36e73f;
+}
+
+#newCard form #cancelButton:hover {
+  border: 0.25vh solid #e73636;
+  color: #e73636;
+}
+
+#newCard form .titleForm {
+  text-align: center;
+  font-size: 4vh;
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 460px) {
+  #newCard form {
+    width: 100%;
+  }
+
+  #newCard .dataCard {
+    flex-direction: column;
+  }
+
+  #newCard table {
+    width: 100%;
+  }
+
+  #newCard .logoForm {
+    height: 5vh;
+    padding-bottom: 2vh;
+  }
+
+  #newCard .logoForm img[src="../img/logo-mastercard.png"] {
+    height: 200%;
+  }
+
+  #newCard .logoForm img[src="../img/logo-visa.png"] {
+    height: 100%;
+  }
+
+  #newCard .logoForm #logoNewCard {
+    width: auto;
+  }
+
+  #newCard form input[type="button"] {
+    width: 100%;
+  }
+}

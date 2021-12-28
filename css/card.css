@@ -1,0 +1,128 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2vh;
+  width: 40vw;
+  margin: 2vh;
+  padding: 2vh;
+  background-color: #659666;
+  color: rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.card .string {
+  display: flex;
+  justify-content: left;
+}
+
+.card .logo {
+  height: 8vh;
+  padding-right: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .logo img[src="../img/logo-mastercard.png"] {
+  height: 80%;
+}
+
+.card .logo img[src="../img/logo-visa.png"] {
+  height: 33%;
+}
+
+.card .column {
+  width: 90%;
+  align-content: space-between;
+  cursor: pointer;
+}
+
+.card .number {
+  line-height: 8vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.card .comment {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding-top: 1vh;
+  padding-bottom: 0.5vh;
+  font-size: 2vh;
+}
+
+.card .delete {
+  width: 8%;
+  padding-right: 2%;
+}
+
+.card .remove {
+  cursor: pointer;
+}
+
+.card .remove:hover path {
+  fill: rgb(235, 34, 34);
+}
+
+.card .remove path {
+  fill: #4b4743;
+}
+
+.deleteCard {
+  transform: scale(0);
+  transition: 1s;
+}
+
+.deletedCard {
+  display: none;
+}
+
+@media (max-width: 930px) {
+  .card {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 630px) {
+  .card {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 90vw;
+  }
+
+  .card .number {
+    line-height: 8vh;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+
+  .card .comment {
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;
+    font-size: 2vh;
+  }
+
+  .card .string {
+    flex-direction: column;
+  }
+
+  .card .logo {
+    padding-right: 0vh;
+  }
+
+  .card .delete {
+    width: 10%;
+  }
+}
