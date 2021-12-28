@@ -5,6 +5,7 @@
 function createCard(item) {
   let cardHTML = "";
   let logo = `img/logo-${item.logo}.png`;
+  let logoImgStyle=(item.logo==='visa'?'height:33%':'height:80%');
   let number =
     item.number.substr(0, 4) +
     " " +
@@ -22,7 +23,7 @@ function createCard(item) {
   cardHTML += "<div class='string'>";
 
   cardHTML += "<div class='logo'>";
-  cardHTML += `<img src=${logo} >`;
+  cardHTML += `<img src=${logo} style=${logoImgStyle}>`;
   cardHTML += "</div>";
 
   cardHTML += `<div class='number'>${number}</div>`;
