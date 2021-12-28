@@ -26,7 +26,7 @@ function buildFormForNewCard(card) {
   newLogo.appendChild(newImg);
   newLogo.setAttribute("class", "logoForm");
   card
-    ? newImg.setAttribute("src", `../img/logo-${card.logo}.png`)
+    ? newImg.setAttribute("src", `img/logo-${card.logo}.png`)
     : newImg.setAttribute("src", "");
   newImg.setAttribute("id", "logoNewCard");
 
