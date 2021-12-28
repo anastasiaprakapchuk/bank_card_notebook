@@ -4,7 +4,7 @@
 
 function createCard(item) {
   let cardHTML = "";
-  let logo = `../img/logo-${item.logo}.png`;
+  let logo = `img/logo-${item.logo}.png`;
   let number =
     item.number.substr(0, 4) +
     " " +
