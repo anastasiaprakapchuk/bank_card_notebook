@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="HandheldFriendly" content="True" />
-    <title>Bank card notebook</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/card.css" />
-    <link rel="stylesheet" href="css/form.css" />
-
-    <script type="module" src="js/constants.js"></script>
-    <script type="module" src="js/fetch.js"></script>
-    <script type="module" src="js/Model.js"></script>
-    <script type="module" src="js/View.js"></script>
-    <script type="module" src="js/Controller.js"></script>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bundle.css" />
+    <script src="bundle.js"></script>
+</head>
+<body>
     <div id="app">
-      <div class="header">
-        <span class="nameApp">Банковские карты</span>
-        <input type="button" id="addCard" value="+ Добавить карту" />
+        <div class="header">
+          <span class="nameApp">Банковские карты</span>
+          <input type="button" id="addCard" value="+ Добавить карту" />
+        </div>
+        <div id="list"></div>
+        <div id="newCard"></div>
       </div>
-      <div id="list"></div>
-      <div id="newCard"></div>
-    </div>
-    <script type="module" src="index.js"></script>
-  </body>
+</body>
 </html>

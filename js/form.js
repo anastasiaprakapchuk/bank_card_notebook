@@ -1,5 +1,8 @@
 "use strict";
+import IMask from "imask";
+
 import { dataForForm } from "./constants.js";
+import "../css/form.css";
 
 //функция построения посредствам DOM формы для новой карты
 function buildFormForNewCard(card) {
@@ -59,7 +62,12 @@ function buildFormForNewCard(card) {
           nameField === "comment" && newField.setAttribute("rows", 5);
           nameField === "comment" &&
             newField.setAttribute("maxlength", atrSize);
-          nameField === "number" && newField.setAttribute("maxlength", atrSize);
+
+          let maskOptions = {
+            mask: "0000000000000000",
+          };
+          let mask = nameField === "number" && IMask(newField, maskOptions);
+
           newField.setAttribute("type", item[key]);
           newField.setAttribute("size", atrSize);
           newField.setAttribute("class", nameField);

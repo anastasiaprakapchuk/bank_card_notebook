@@ -1,4 +1,6 @@
 "use strict";
+import "regenerator-runtime/runtime";
+
 import Model from "./js/Model.js";
 import View from "./js/View.js";
 import Controller from "./js/Controller.js";
@@ -33,5 +35,6 @@ async function buildApp() {
   }
 
   // инициализация текущего списка
-  initializationList(currentList);
+  currentList&&initializationList(currentList);
+  
 }

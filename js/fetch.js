@@ -1,4 +1,6 @@
 "use strict";
+import "regenerator-runtime/runtime";
+
 import { wayDB } from "./constants.js";
 import { secretKey } from "./constants.js";
 

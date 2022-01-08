@@ -3,6 +3,7 @@
 
 import { createCard } from "./card.js";
 import { buildFormForNewCard } from "./form.js";
+import "../css/main.css";
 
 export default class View {
   constructor() {
@@ -63,7 +64,7 @@ export default class View {
 
   addLogoNewCard(logo) {
     let logoElem = document.getElementById("logoNewCard");
-    logoElem.setAttribute('src',(logo ? `img/logo-${logo}.png` : ``));
+    logoElem.src = logo ? `img/logo-${logo}.png` : "";
   }
 
   deleteCard(id) {

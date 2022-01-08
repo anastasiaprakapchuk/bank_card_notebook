@@ -1,7 +1,7 @@
 "use strict";
 
 //URLs
-const wayDB = "https://api.jsonbin.io/b/61d6f7652362237a3a3342ce";
+const wayDB = "https://api.jsonbin.io/b/61d86d112362237a3a33f5bf";
 const secretKey =
   "$2b$10$XjxC.kAIp/B6vt0r1oWeLO6dkxXYMLYOqflTMkpcQ3GAPcKWEcjYi";
 
