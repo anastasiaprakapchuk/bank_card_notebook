@@ -1,11 +1,12 @@
 "use strict";
+import "../css/card.css";
 
 //функция построения карты в списке
 
 function createCard(item) {
   let cardHTML = "";
   let logo = `img/logo-${item.logo}.png`;
-  let logoImgStyle=(item.logo==='visa'?'height:33%':'height:80%');
+  let logoImgStyle=(item.logo==="visa"?"height:33%":"height:80%");
   let number =
     item.number.substr(0, 4) +
     " " +

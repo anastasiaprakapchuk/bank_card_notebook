@@ -126,11 +126,11 @@
     padding-bottom: 2vh;
   }
 
-  #newCard .logoForm img[src="img/logo-mastercard.png"] {
+  #newCard .logoForm img[src="../img/logo-mastercard.png"] {
     height: 200%;
   }
 
-  #newCard .logoForm img[src="img/logo-visa.png"] {
+  #newCard .logoForm img[src="../img/logo-visa.png"] {
     height: 100%;
   }
 

@@ -1,5 +1,6 @@
 "use strict";
 //model
+import "regenerator-runtime/runtime";
 
 import { RequestUpdateCards } from "./fetch.js";
 import { validationNewCard, validationLogo } from "./validation.js";

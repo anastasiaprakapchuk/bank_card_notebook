@@ -29,11 +29,11 @@
   justify-content: center;
 }
 
-.card .logo img[src="img/logo-mastercard.png"] {
+.card .logo img[src="../img/logo-mastercard.png"] {
   height: 80%;
 }
 
-.card .logo img[src="img/logo-visa.png"] {
+.card .logo img[src="../img/logo-visa.png"] {
   height: 33%;
 }
 

@@ -1,5 +1,6 @@
 "use strict";
 //controller
+import "regenerator-runtime/runtime";
 import { dataForForm } from "./constants.js";
 
 export default class Controller {
