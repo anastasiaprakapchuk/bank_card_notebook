@@ -9,7 +9,7 @@ const extractCSS = new MiniCssExtractPlugin({
 module.exports = { 
     entry: ["regenerator-runtime/runtime.js","./index.js"], // основной файл приложения["babel-polyfill", "./app.js"]
     output:{ 
-        path: __dirname, // путь к каталогу выходных файлов
+        path: __dirname+ "/public/", // путь к каталогу выходных файлов
         filename: "bundle.js"  // название создаваемого файла 
     }, 
     mode: "development",
