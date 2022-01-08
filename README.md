@@ -1,6 +1,6 @@
 # Bank card notebook
 
-Реализована записная книжка банковских карт
+Реализована записная книжка банковских карт\
 Ссылка на работающий проект https://anastasiaprakapchuk.github.io/bank_card_notebook/ 
 
 ## Технологии
